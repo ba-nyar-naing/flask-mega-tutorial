@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Personal Page</title>
+      {% else %}
+      <title>Welcome to My Personal Page</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Personal Page: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
